@@ -1,13 +1,14 @@
 {
   "spider": "",
   "wallpaper": "https://深色壁纸.xxooo.cf/",
+  "logo": "https://www.vv3nwjk.com/favicon.ico",
 
   "sites": [
     {
-      "key": "豆瓣",
-      "name": "🟢提示┃请勿相信广告",
+      "key": "豆瓣推荐",
+      "name": "🟢小默源┃公众号",
       "type": 3,
-      "api": "csp_DouDou",
+      "api": "csp_Douban",
       "searchable": 0,
       "quickSearch": 0,
       "changeable": 1
@@ -15,11 +16,71 @@
     {
       "key": "小默影视",
       "name": "🎬小默影视┃测试",
-      "type": 0,
-      "api": "https://www.vv3nwjk.com/api.php/provide/vod/",
+      "type": 3,
+      "api": "csp_XBPQ",
       "searchable": 1,
       "quickSearch": 1,
-      "changeable": 1
+      "changeable": 1,
+      "timeout": 30,
+      "ext": {
+        "主页url": "https://www.vv3nwjk.com",
+        "请求头": "User-Agent$Mozilla/5.0#Referer$https://www.vv3nwjk.com",
+        "分类": "电影$1#电视剧$2#综艺$3#动漫$4",
+        "分类url": "https://www.vv3nwjk.com/vodshow/{cateId}--------{catePg}---.html",
+        "搜索url": "https://www.vv3nwjk.com/vodsearch/{wd}----------1---.html",
+        "搜索模式": "1"
+      }
+    },
+    {
+      "key": "农民影视",
+      "name": "🌾农民影视",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 1,
+      "timeout": 30,
+      "ext": {
+        "主页url": "https://www.nmddd.com",
+        "分类": "动作片$6#喜剧片$7#爱情片$8#科幻片$9#恐怖片$10#剧情片$11#战争片$12",
+        "分类url": "https://www.nmddd.com/index.php/vod/show/id/{cateId}/page/{catePg}.html",
+        "搜索url": "https://www.nmddd.com/index.php/vod/search/page/1/wd/{wd}.html",
+        "搜索模式": "1"
+      }
+    },
+    {
+      "key": "FreeOK",
+      "name": "🍀FreeOK",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 1,
+      "timeout": 30,
+      "ext": {
+        "主页url": "https://www.freeok.vip",
+        "分类": "电影$1#电视剧$2#综艺$3#动漫$4",
+        "分类url": "https://www.freeok.vip/vodshow/{cateId}--------{catePg}---.html",
+        "搜索url": "https://www.freeok.vip/vodsearch/{wd}----------1---.html",
+        "搜索模式": "1"
+      }
+    },
+    {
+      "key": "剧荒",
+      "name": "📺剧荒TV",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "searchable": 1,
+      "quickSearch": 1,
+      "changeable": 1,
+      "timeout": 30,
+      "ext": {
+        "主页url": "https://www.juhuang.tv",
+        "分类": "电影$1#电视剧$2#综艺$3#动漫$4",
+        "分类url": "https://www.juhuang.tv/vodshow/{cateId}--------{catePg}---.html",
+        "搜索url": "https://www.juhuang.tv/vodsearch/{wd}----------1---.html",
+        "搜索模式": "1"
+      }
     }
   ],
 
